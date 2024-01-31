@@ -7,10 +7,10 @@
 # Inherit from beryllium device.
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common project matrixx stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common evolution x stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
@@ -31,23 +31,19 @@ TARGET_DISABLE_EPPE := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 TARGET_EXCLUDES_AUDIOFX := true
-WITH_GMS := true
-MATRIXX_CHIPSET := SDM845
-MATRIXX_BATTERY := 4000mAh
-MATRIXX_DISPLAY := 1080x2246
 
 # Maintainer flag
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.matrixx.maintainer=Max
+    ro.evolution.maintainer=Max
 
 # Build details
-MATRIXX_MAINTAINER := Max
-MATRIXX_BUILD_TYPE := Unofficial
+EVO_MAINTAINER := Max
+EVO_BUILD_TYPE := Unofficial
 BUILD_USERNAME := Max
-BUILD_HOSTNAME := Project Matrixx
+BUILD_HOSTNAME := Evolution X
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_beryllium
+PRODUCT_NAME := evolution_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Pocophone F1
