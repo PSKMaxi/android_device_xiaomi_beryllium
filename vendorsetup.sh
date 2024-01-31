@@ -1,5 +1,5 @@
 # Clone Kernel
-rm -rf kernel/xiaomi && git clone https://github.com/Skallfa/kernel_xiaomi_sdm845-common.git -b 14 kernel/xiaomi/sdm845-common --depth=1
+rm -rf kernel/xiaomi && git clone https://github.com/PSKMaxi/kernel_xiaomi_sdm845-common.git -b main kernel/xiaomi/sdm845-common --depth=1
 
 # Vendor Tree
 rm -rf vendor/xiaomi && git clone --depth=1 https://github.com/PSKMaxi/proprietary_vendor_xiaomi_beryllium.git -b 14 vendor/xiaomi/beryllium
@@ -11,7 +11,7 @@ git clone --depth=1 https://github.com/PSKMaxi/proprietary_vendor_xiaomi_sdm845-
 git clone https://github.com/PSKMaxi/android_device_xiaomi_sdm845-common.git -b 14 device/xiaomi/sdm845-common
 
 # Clone Clang
-git clone https://gitlab.com/jjpprrrr/prelude-clang.git -b master clang-prelude --depth=1 && mv clang-prelude prebuilts/clang/host/linux-x86/
+# git clone https://gitlab.com/jjpprrrr/prelude-clang.git -b master clang-prelude --depth=1 && mv clang-prelude prebuilts/clang/host/linux-x86/
 
 # Clone Hals
 rm -rf hardware/qcom-caf/sdm845/display && git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b lineage-21.0-caf-sdm845 hardware/qcom-caf/sdm845/display
