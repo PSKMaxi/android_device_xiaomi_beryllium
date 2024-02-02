@@ -7,8 +7,8 @@
 # Inherit from beryllium device.
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common black iron project stuff.
-$(call inherit-product, vendor/blackiron/config/common.mk)
+# Inherit some common derpfest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -32,18 +32,12 @@ SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 TARGET_EXCLUDES_AUDIOFX := true
 
-# Maintainer flag
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.blackiron.maintainer=Max
-
 # Build details
-BLACKIRON_MAINTAINER := Max
-BLACKIRON_BUILD_TYPE := Unofficial
-BUILD_USERNAME := Max
-BUILD_HOSTNAME := Black Iron Project
+DERP_MAINTAINER := Max
+DERP_BUILD_TYPE := Unofficial
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := blackiron_beryllium
+PRODUCT_NAME := derp_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Pocophone F1
