@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blackiron_beryllium.mk
+    $(LOCAL_DIR)/superior_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    blackiron_beryllium-user \
-    blackiron_beryllium-userdebug \
-    blackiron_beryllium-eng
+    superior_beryllium-user \
+    superior_beryllium-userdebug \
+    superior_beryllium-eng
