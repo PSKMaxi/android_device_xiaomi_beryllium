@@ -17,7 +17,7 @@ git clone https://github.com/PSKMaxi/android_device_xiaomi_sdm845-common.git -b 
 rm -rf hardware/qcom-caf/sdm845/display && git clone https://github.com/LineageOS/android_hardware_qcom_display.git -b lineage-21.0-caf-sdm845 hardware/qcom-caf/sdm845/display
 rm -rf hardware/qcom-caf/sdm845/audio && git clone https://github.com/LineageOS/android_hardware_qcom_audio.git -b lineage-21.0-caf-sdm845 hardware/qcom-caf/sdm845/audio
 rm -rf hardware/qcom-caf/sdm845/media && git clone https://github.com/LineageOS/android_hardware_qcom_media.git -b lineage-21.0-caf-sdm845 hardware/qcom-caf/sdm845/media
-rm -rf external/tinyxml && git clone https://github.com/ArrowOS/android_external_tinyxml -b arrow-13.1 external/tinyxml
+rm -rf external/tinyxml && git clone https://github.com/ArrowOS/android_external_tinyxml.git -b arrow-13.1 external/tinyxml
 
 # Clone hardware
 rm -rf hardware/xiaomi && git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
