@@ -7,8 +7,8 @@
 # Inherit from beryllium device.
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common bananadroid stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -31,13 +31,15 @@ TARGET_DISABLE_EPPE := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 TARGET_EXCLUDES_AUDIOFX := true
+TARGET_EXCLUDE_MATLOG := true
+WITH_GAPPS := true
 
 # Build details
-DERP_MAINTAINER := Max
-DERP_BUILD_TYPE := Unofficial
+BANANA_MAINTAINER := Max
+BANANA_BUILD_TYPE := Unofficial
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_beryllium
+PRODUCT_NAME := banana_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Pocophone F1
