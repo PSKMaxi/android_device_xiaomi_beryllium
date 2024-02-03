@@ -7,8 +7,8 @@
 # Inherit from beryllium device.
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common black iron project stuff.
-$(call inherit-product, vendor/blackiron/config/common_full_phone.mk)
+# Inherit some common superior extended stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -31,15 +31,22 @@ TARGET_DISABLE_EPPE := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 TARGET_EXCLUDES_AUDIOFX := true
-TARGET_EXCLUDE_MATLOG := true
-WITH_GMS := true
+TARGET_INCLUDE_MATLOG := false
+TARGET_SHIPS_PREBUILT_GCAM := false
+USE_MOTO_CALCULATOR := true
+TARGET_SUPPORTS_BLUR := false
+SUPERIOR_UDFPS_ANIMATIONS := false
+BUILD_WITH_GAPPS := true
+USE_DUCKDUCKGO := false
+USE_ViaBrowser := false
+TARGET_BUILD_VIMUSIC := false
 
 # Build details
-BLACKIRON_MAINTAINER := Max
-BLACKIRON_BUILD_TYPE := Unofficial
+SUPERIOR_MAINTAINER := Max
+SUPERIOR_BUILD_TYPE := Unofficial
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := blackiron_beryllium
+PRODUCT_NAME := superior_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Pocophone F1
