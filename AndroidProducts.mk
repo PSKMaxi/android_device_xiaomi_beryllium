@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_beryllium.mk
+    $(LOCAL_DIR)/blackiron_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_beryllium-user \
-    banana_beryllium-userdebug \
-    banana_beryllium-eng
+    blackiron_beryllium-user \
+    blackiron_beryllium-userdebug \
+    blackiron_beryllium-eng
