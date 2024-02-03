@@ -20,7 +20,7 @@ rm -rf hardware/qcom-caf/sdm845/media && git clone https://github.com/LineageOS/
 rm -rf external/tinyxml && git clone https://github.com/ArrowOS/android_external_tinyxml -b arrow-13.1 external/tinyxml
 
 # Clone hardware
-rm -rf hardware/xiaomi && git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
+rm -rf hardware/xiaomi && git clone https://github.com/ArrowOS-Devices/android_hardware_xiaomi.git -b arrow-13.1 hardware/xiaomi
 
 # Clone Kernel SU
 cd kernel/xiaomi/sdm845-common/ && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash - && cd ../../..
