@@ -21,14 +21,14 @@
         <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
-        <!-- <interface>
+        <interface>
             <name>IDisplayModes</name>
             <instance>default</instance>
-        </interface> -->
-        <!-- <interface>
+        </interface>
+        <interface>
             <name>IPictureAdjustment</name>
             <instance>default</instance>
-        </interface> -->
+        </interface>
         <interface>
             <name>ISunlightEnhancement</name>
             <instance>default</instance>
