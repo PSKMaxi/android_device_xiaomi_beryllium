@@ -7,8 +7,8 @@
 # Inherit from beryllium device.
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common project matrixx stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common pos stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -34,20 +34,16 @@ TARGET_EXCLUDES_AUDIOFX := true
 TARGET_INCLUDE_MATLOG := false
 TARGET_SHIPS_PREBUILT_GCAM := false
 TARGET_SUPPORTS_BLUR := false
-BUILD_WITH_GAPPS := true
 USE_DUCKDUCKGO := false
 USE_ViaBrowser := false
 TARGET_BUILD_VIMUSIC := false
-MATRIXX_CHIPSET := SDM845
-MATRIXX_BATTERY := 4000mAh
-MATRIXX_DISPLAY := 1080x2246
 
 # Build details
-MATRIXX_MAINTAINER := Max
-MATRIXX_BUILD_TYPE := Unofficial
+POS_MAINTAINER := Max
+POS_BUILD_TYPE := Unofficial
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_beryllium
+PRODUCT_NAME := aosp_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Pocophone F1
