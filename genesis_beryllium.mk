@@ -7,8 +7,8 @@
 # Inherit from beryllium device.
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common pos stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common genesis os stuff.
+$(call inherit-product, vendor/genesis/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -41,11 +41,11 @@ USE_ViaBrowser := false
 TARGET_BUILD_VIMUSIC := false
 
 # Build details
-POS_MAINTAINER := Max
-POS_BUILD_TYPE := Unofficial
+GENESIS_MAINTAINER := Max
+GENESIS_BUILD_TYPE := Unofficial
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_beryllium
+PRODUCT_NAME := genesis_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Pocophone F1
