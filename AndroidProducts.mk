@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_beryllium.mk
+    $(LOCAL_DIR)/genesis_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_beryllium-user \
-    aosp_beryllium-userdebug \
-    aosp_beryllium-eng
+    genesis_beryllium-user \
+    genesis_beryllium-userdebug \
+    genesis_beryllium-eng
