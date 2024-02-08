@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/genesis_beryllium.mk
+    $(LOCAL_DIR)/lineage_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    genesis_beryllium-user \
-    genesis_beryllium-userdebug \
-    genesis_beryllium-eng
+    lineage_beryllium-user \
+    lineage_beryllium-userdebug \
+    lineage_beryllium-eng
