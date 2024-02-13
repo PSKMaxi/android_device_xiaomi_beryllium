@@ -19,7 +19,7 @@ rm -rf hardware/qcom-caf/sdm845/audio && git clone https://github.com/LineageOS/
 rm -rf hardware/qcom-caf/sdm845/media && git clone https://github.com/LineageOS/android_hardware_qcom_media.git -b lineage-21.0-caf-sdm845 hardware/qcom-caf/sdm845/media
 rm -rf external/tinyxml && git clone https://github.com/ArrowOS/android_external_tinyxml.git -b arrow-13.1 external/tinyxml
 
-# Clone hardware
+# clone hardware
 rm -rf hardware/xiaomi && git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
 
 # Clone Kernel SU
