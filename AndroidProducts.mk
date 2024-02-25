@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_beryllium.mk
+    $(LOCAL_DIR)/rising_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_beryllium-user \
-    voltage_beryllium-userdebug \
-    voltage_beryllium-eng
+    rising_beryllium-user \
+    rising_beryllium-userdebug \
+    rising_beryllium-eng
