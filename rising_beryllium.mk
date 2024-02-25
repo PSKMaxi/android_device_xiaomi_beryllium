@@ -7,8 +7,8 @@
 # Inherit from beryllium device.
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common voltage os stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common rising os stuff.
+$(call inherit-product, vendor/rising/config/rising.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -39,13 +39,15 @@ TARGET_SUPPORTS_BLUR := false
 USE_DUCKDUCKGO := false
 USE_ViaBrowser := false
 TARGET_BUILD_VIMUSIC := false
+RISING_CHIPSET := Snapdragon 845 4G
+WITH_GMS := true
 
 # Build details
-VOLTAGE_MAINTAINER := Max
-VOLTAGE_BUILD_TYPE := Unofficial
+RISING_MAINTAINER := Max
+RISING_BUILD_TYPE := Unofficial
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := voltage_beryllium
+PRODUCT_NAME := rising_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Pocophone F1
