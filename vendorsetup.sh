@@ -23,7 +23,7 @@ rm -rf external/tinyxml && git clone https://github.com/ArrowOS/android_external
 rm -rf hardware/xiaomi && git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
 
 # clone settings resources
-rm -rf packages/resources/devicesettings && git clone https://github.com/LineageOS/android_packages_resources_devicesettings.git -b lineage-20.0 packages/resources/devicesettings
+rm -rf packages/resources/devicesettings && git clone https://github.com/LineageOS/android_packages_resources_devicesettings.git -b lineage-21.0 packages/resources/devicesettings
 
 # Clone Kernel SU
 cd kernel/xiaomi/sdm845-common/ && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash - && cd ../../..
