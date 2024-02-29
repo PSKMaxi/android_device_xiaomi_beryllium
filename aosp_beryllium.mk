@@ -7,8 +7,8 @@
 # Inherit from beryllium device.
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common sup ext stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common tpp stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
@@ -39,16 +39,15 @@ TARGET_SUPPORTS_BLUR := false
 USE_DUCKDUCKGO := false
 USE_ViaBrowser := false
 TARGET_BUILD_VIMUSIC := false
-SUPERIOR_UDFPS_ANIMATIONS := false
 USE_MOTO_CALCULATOR := false
 USE_MOTO_CLOCK := false
 
 # Build details
-SUPERIOR_MAINTAINER := Max
-SUPERIOR_BUILD_TYPE := Unofficial
+TPP_MAINTAINER := Max
+TPP_BUILD_TYPE := Unofficial
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_beryllium
+PRODUCT_NAME := aosp_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Pocophone F1
